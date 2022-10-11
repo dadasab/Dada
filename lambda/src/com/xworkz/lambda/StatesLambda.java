@@ -7,8 +7,6 @@ public class StatesLambda {
 
 	public static void main(String[] args) {
 
-		
-
 		List<String> list = new ArrayList<String>();
 		list.add("Andhra Pradesh");
 		list.add("Arunachal Pradesh");
@@ -59,11 +57,11 @@ public class StatesLambda {
 		System.out.println("---------------");
 		list.stream().filter((ref) -> ref.length() < 5).forEach(ref -> System.out.println(ref));
 		System.out.println("---------------");
-		list.stream().forEach((ref) -> System.out.println(ref.toUpperCase()));
+		list.stream().forEach((ref) -> System.out.println("Upper:  "+ref.toUpperCase()));
 		System.out.println("---------------");
-		list.stream().forEach((ref) -> System.out.println(ref.toLowerCase()));
+		list.stream().forEach((ref) -> System.out.println("Lower: "+ref.toLowerCase()));
 		System.out.println("---------------");
-		list.stream().forEach((ref) -> System.out.println(new StringBuffer().append(ref).reverse()));
+		list.stream().forEach((ref) -> System.out.println("Revers:"+new StringBuffer().append(ref).reverse()));
 		System.out.println("---------------");
 
 		list.stream().distinct().forEach((ref) -> System.out.println(ref));
