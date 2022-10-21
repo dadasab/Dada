@@ -14,7 +14,7 @@ import lombok.ToString;
 public class ProjectorDTO {
 	
 	private int id;
-	private String CompanyName;
+	private String companyName;
 	private int launched;
 	private String color;
 	private int price;
